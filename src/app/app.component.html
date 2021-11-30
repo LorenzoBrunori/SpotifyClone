@@ -1,5 +1,22 @@
-<div class="container">
-  <div class="btn btn-primary">
-    <fa-icon [icon]="faCoffee"></fa-icon>
+<div class="row">
+  <div class="col-2 mySideBar">
+    <div class="container flex">
+      <div class="logo">
+        <a class="basic-link" routerLink="/"><i class="fa fa-spotify fa-4x" aria-hidden="true"></i></a>
+        <a class="basic-link logo-testo" routerLink="/">Spotify</a>
+      </div>
+      <div class="search">
+        <a class="common-link" routerLink="/search"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <a class="common-link logo-testo2">Search</a>
+      </div>
+      <div class="search">
+        <a class="common-link" routerLink="/"><i class="fa fa-folder-o" aria-hidden="true"></i></a>
+        <a class="common-link logo-testo2" routerLink="/">Album</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-9">
+    <router-outlet></router-outlet>
   </div>
 </div>

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.basic-link {
+    text-decoration: none;
+    color: white;
+}
+
+.common-link{
+    text-decoration: none;
+    font-size: 24px;
+    color: #b2b2b2;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-testo {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.search{
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.logo-testo2 {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    font-size: 26px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 24px;
+}
+
+.mySideBar {
+    background-color: #121212;
+    height: 100vh;
+}
