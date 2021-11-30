@@ -8,7 +8,7 @@ import { SearchComponent } from "./search/search.component";
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'albums:id', component: AlbumsComponent },
+    { path: 'albums/:id', component: AlbumsComponent },
     { path: 'search', component: SearchComponent },
 
 ];

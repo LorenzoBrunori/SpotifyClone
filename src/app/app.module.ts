@@ -18,7 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule  
+    AppRoutingModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

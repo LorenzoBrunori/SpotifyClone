@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import SearchJson from 'src/app/mock/search.json';
-import { Artista, Album, TrackList } from '../shared/artista.interface';
 
 
 @Component({
