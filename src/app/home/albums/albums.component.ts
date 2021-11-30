@@ -9,9 +9,9 @@ import SearchJson from 'src/app/mock/search.json';
 export class AlbumsComponent implements OnInit {
   artisti = SearchJson;
   id: string;
+  name: string;
   sub
   constructor(private route: ActivatedRoute) {
-
   }
 
   ngOnInit(): void {
@@ -19,15 +19,6 @@ export class AlbumsComponent implements OnInit {
       console.log(params);
       this.id = params.get('id');
     });
-
-    // This params is deprecated
-
-    //this.sub=this._Activatedroute.params.subscribe(params => { 
-    //    this.id = params['id']; 
-    //    let products=this._productService.getProducts();
-    //    this.product=products.find(p => p.productID==this.id);    
-    //
-    //});
   }
 }
 
