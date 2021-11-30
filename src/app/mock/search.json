@@ -3,6 +3,7 @@
     "id": 0,
     "genre": "Rock",
     "name": "AC/DC",
+    "imagePath": "https://i.scdn.co/image/ab67706f00000003eb6ecd02b6e08dfdefcdcc21",
     "bio": "Are an Australian rock band formed in Sydney in 1973 by Scottish-born brothers Malcolm and Angus Young.Their music has been variously described as hard rock, blues rock, and heavy metal, but the band themselves call it simply 'rock and roll'",
     "is_band": true,
     "album": [
@@ -98,6 +99,7 @@
     "id": 1,
     "genre": "Rap",
     "name": "Eminem",
+    "imagePath": "https://i.scdn.co/image/ab67706f000000027a181d9fed936372672c40ca",
     "bio" : "Is an American rapper, songwriter, and record producer. Eminem is among the best-selling music artists of all time, with estimated worldwide sales of over 220 million records. He is credited with popularizing hip hop in Middle America and is critically acclaimed as one of the greatest rappers of all time.",
     "is_band": false,
     "album": [
@@ -150,6 +152,7 @@
     "id": 2,
     "genre": "Pop rock",
     "name": "Rino Gaetano",
+    "imagePath": "https://i.scdn.co/image/ab67706f000000027a181d9fed936372672c40ca",
     "bio": "Was an Italian musician and singer-songwriter. He is famous for his satirical songs and oblique yet incisive political commentary. He is remembered for his rough voice, for the heavily ironic lyrics of his songs and his social protests. He died in a car accident at age 30. He was a popular and influential figure, widely re-evaluated by the following teen generations.",
     "is_band": false,
     "album": [
