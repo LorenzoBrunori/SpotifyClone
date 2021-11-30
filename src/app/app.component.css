@@ -10,6 +10,15 @@
     cursor: pointer;
 }
 
+.basic-link:hover {
+    color: #b2b2b2;
+}
+
+.marginTB{
+    margin-top: 12px;
+}
+
+
 .homeComponent{
     background-color: #1d1d1d;
     height: 100vh;
@@ -22,6 +31,10 @@
     cursor: pointer;
 }
 
+.common-link:hover{
+    color: white;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -32,7 +45,7 @@
     margin-left: 12px;
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .search{

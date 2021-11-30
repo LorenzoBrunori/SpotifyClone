@@ -3,10 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #8b8888;
 }
 
 .artista{
-    height: 100px;
     width: 100%;
+    padding: 12px;
+}
+
+.myHover:hover h3{
+    color: white;
+    transition: color 1s ease;
+}
+
+.myImage{
+    padding: 6px;
+    max-width: 250px;
+}
+
+.artistLink{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myFlex{
+    display: flex;
+    justify-content: center;
 }
