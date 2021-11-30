@@ -1,3 +1,21 @@
-<table>
-    <th></th>
-</table>
+<h2>{{artista.name}}</h2>
+
+<div *ngFor="let album of artista.album">
+    <!-- <a [routerLink]="['/albums',artista.id,album.name_album]"> -->
+    <div (click)="mostraCanzoni = !mostraCanzoni">{{album.name_album}}</div> 
+    <ul *ngIf="mostraCanzoni">
+        <li *ngFor="let song of album.track_list">
+            {{song.name_track}}
+        </li>
+    </ul>
+    
+
+<!-- </a>  -->
+
+    
+    <!-- <router-outlet></router-outlet> -->
+</div>
+
+<!-- qui pensavo di aggiungere un child route e fare tipo l'esempio di maximilian che quando clicki sul nome dell'album ti fa vedere la lista canzoni (dentro un altro componente quindi).
+Ho gia creato la componente 'song' dentro albums e ho già impostato il child route pero non sono riuscito a farlo funzionare.
+Adesso ho rimesso tutto in uno stato semi mezzo funzionante   -->
