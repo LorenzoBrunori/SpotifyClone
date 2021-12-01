@@ -32,8 +32,8 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules@fortawesome/fontawesome-freejs/brands.min.js",
-              "node_modules@fortawesome/fontawesome-freejs/fontawesome.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/brands.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js",
               "node_modules/@fortawesome/fontawesome-free/js/solid.min.js"
             ]
           },
@@ -105,8 +105,8 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules@fortawesome/fontawesome-freejs/brands.min.js",
-              "node_modules@fortawesome/fontawesome-freejs/fontawesome.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/brands.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js",
               "node_modules/@fortawesome/fontawesome-free/js/solid.min.js"
             ]
           }
