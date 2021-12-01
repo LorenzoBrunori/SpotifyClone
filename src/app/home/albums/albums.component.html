@@ -1,13 +1,13 @@
 
 <div class="container">
-    <div *ngIf="artista && artista.album.length > 0">
-        <div *ngFor="let album of artista.album">
+    <!-- <div *ngIf="artista && artista.album.length > 0" > -->
+        <div *ngFor="let album of artista.album; let i = index" (click)="mostraCanzoni[i] = !mostraCanzoni[i]">
             <p><a>{{album.name_album}}</a></p>
-            <!-- <ul *nfIf=>
-                <li>
-                    
+            <ul *ngIf="mostraCanzoni[i]">
+                <li *ngFor="let song of album.track_list">
+                    {{song.name_track}}
                 </li> 
-            </ul>-->
+            </ul>
         </div>
-    </div>
+    <!-- </div> -->
 </div>

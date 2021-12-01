@@ -12,19 +12,22 @@ export class AlbumsComponent implements OnInit {
   artisti = SearchJson;
   artista: Artista;
   id: string;
-  sub
+  sub;
+  mostraCanzoni: boolean[] ;
   constructor(private route: ActivatedRoute) {
 
   }
 
   ngOnInit(): void {
     this.sub = this.route.paramMap.subscribe(params => {
-      console.log(params);
       this.id = params.get('id');
-      console.log('id is '+this.id);
     });
     
     this.getArtista(+this.id);
+
+    this.artista.album.forEach(album => {
+      this.mostraCanzoni.push(false);
+    });
   }
 
   getArtista(id: number) {
