@@ -13,7 +13,7 @@ export class AlbumsComponent implements OnInit {
   artista: Artista;
   id: string;
   sub;
-  mostraCanzoni: boolean[] ;
+  mostraCanzoni: boolean[] = [];
   constructor(private route: ActivatedRoute) {
 
   }
@@ -28,6 +28,7 @@ export class AlbumsComponent implements OnInit {
     this.artista.album.forEach(album => {
       this.mostraCanzoni.push(false);
     });
+    console.log(this.mostraCanzoni);
   }
 
   getArtista(id: number) {
