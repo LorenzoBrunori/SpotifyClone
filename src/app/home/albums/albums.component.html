@@ -1,1 +1,13 @@
 
+<div class="container">
+    <div *ngIf="artista && artista.album.length > 0">
+        <div *ngFor="let album of artista.album">
+            <p><a>{{album.name_album}}</a></p>
+            <!-- <ul *nfIf=>
+                <li>
+                    
+                </li> 
+            </ul>-->
+        </div>
+    </div>
+</div>

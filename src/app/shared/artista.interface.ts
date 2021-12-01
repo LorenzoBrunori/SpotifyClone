@@ -1,5 +1,3 @@
-declare module Artista {
-
     export interface TrackList {
         name_track: string;
         time: string;
@@ -12,7 +10,7 @@ declare module Artista {
         track_list: TrackList[];
     }
 
-    export interface RootObject {
+    export interface Artista {
         id: number;
         genre: string;
         name: string;
@@ -21,5 +19,3 @@ declare module Artista {
         is_band: boolean;
         album: Album[];
     }
-
-}
