@@ -25,9 +25,17 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/font-awesome/css/font-awesome.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules@fortawesome/fontawesome-freejs/brands.min.js",
+              "node_modules@fortawesome/fontawesome-freejs/fontawesome.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/solid.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,9 +97,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules@fortawesome/fontawesome-freejs/brands.min.js",
+              "node_modules@fortawesome/fontawesome-freejs/fontawesome.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/solid.min.js"
+            ]
           }
         },
         "lint": {
