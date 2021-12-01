@@ -43,6 +43,12 @@ export class AlbumsComponent implements OnInit {
       album: art.album
     };
   }
+
+  changeCaret(i: number){
+    this.mostraCanzoni[i] = !this.mostraCanzoni[i];
+    console.log(this.mostraCanzoni);
+  }
+  
 }
 
 
