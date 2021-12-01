@@ -1,1 +1,18 @@
-<p>search works!</p>
+<form class="wrap">
+    <div class="search">
+        <label for="searchBar">Search artist by name filter</label>
+        <input id="searchBar"
+        class="searchTerm form-control" 
+        type="text" name="searchTerm" 
+        placeholder="Filter by artist name"
+        [(ngModel)]="searchTerm" (input)="search($event.target.value)" />
+    </div>
+</form>
+
+<div *ngFor="let art of artisti | searchFilter: searchTerm; index as i">
+        <a [routerLink]="['/albums', art.id]" class="artistLink">
+            <span scope="row">{{ i + 1 }}</span>
+            <img class="rounded float-left myImage" [src]="art.imagePath" alt="">
+            <h3>{{ art.name }}</h3>
+        </a>
+</div>

@@ -6,17 +6,23 @@ import { HomeComponent } from './home/home.component';
 import { AlbumsComponent } from './Home/albums/albums.component';
 import { SearchComponent } from './search/search.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SearchFilterPipe } from './search/search-filter.pipe';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AlbumsComponent,
-    SearchComponent
+    SearchComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
+    HttpClientModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
