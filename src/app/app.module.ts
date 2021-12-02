@@ -10,13 +10,14 @@ import { SearchFilterPipe } from './search/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AlbumsComponent,
     SearchComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
   ],
   imports: [
     BrowserModule,

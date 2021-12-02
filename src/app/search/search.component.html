@@ -1,11 +1,11 @@
 <form class="wrap">
     <div class="search">
-        <label for="searchBar">Search artist by name filter</label>
+        <label for="searchBar">Search artist by name, band name, track name</label>
         <input id="searchBar"
         class="searchTerm form-control" 
         type="text" name="searchTerm" 
-        placeholder="Filter by artist name"
-        [(ngModel)]="searchTerm" (input)="search($event.target.value)" />
+        placeholder="Filter by artist name, band name or track name"
+        [(ngModel)]="searchTerm"/>
     </div>
 </form>
 
