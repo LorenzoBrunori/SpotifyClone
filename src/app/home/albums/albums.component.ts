@@ -28,7 +28,6 @@ export class AlbumsComponent implements OnInit {
     this.artista.album.forEach(album => {
       this.mostraCanzoni.push(false);
     });
-    console.log(this.mostraCanzoni);
   }
 
   getArtista(id: number) {
@@ -46,7 +45,6 @@ export class AlbumsComponent implements OnInit {
 
   showTracks(i: number){
     this.mostraCanzoni[i] = !this.mostraCanzoni[i];
-    console.log(this.mostraCanzoni);
   }
   
 }
