@@ -8,7 +8,6 @@ import { SearchComponent } from './search/search.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchFilterPipe } from './search/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,7 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, 
     FormsModule
   ],
   providers: [],

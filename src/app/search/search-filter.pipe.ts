@@ -11,7 +11,7 @@ export class SearchFilterPipe implements PipeTransform {
   // }
 
   transform (artisti: any[], filterText: string): any {
-    let artistiCopy: any[] = [];
+    let artistiResult: any[] = [];
 
     artisti.forEach(artista => {
       let str = '';
@@ -23,9 +23,9 @@ export class SearchFilterPipe implements PipeTransform {
         }); 
       });
       if(str.toLowerCase().includes(filterText)){
-          artistiCopy.push(artista);
+          artistiResult.push(artista);
         }
     });
-    return artistiCopy;
+    return artistiResult;
   }
 }

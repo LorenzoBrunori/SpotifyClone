@@ -13,13 +13,9 @@ export class HomeComponent implements OnInit {
 
   artisti = SearchJson;
 
-  constructor() {
-    console.log(this.artisti);
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }
-
-  
 
 }

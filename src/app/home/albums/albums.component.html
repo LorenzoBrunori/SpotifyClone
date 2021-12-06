@@ -7,13 +7,14 @@
             <p>{{artista.bio}}</p>
         </div>
 
-        <div *ngFor="let album of artista.album; let i = index" (click)="changeCaret(i)">
-           
-            <p><a>{{album.name_album}}
-                <span *ngIf="mostraCanzoni[i]"><i class="fas fa-caret-up"></i></span>
-                <span *ngIf="!mostraCanzoni[i]"><i class="fas fa-caret-down"></i></span>
-                
-            </a></p>
+        <div *ngFor="let album of artista.album; let i = index" (click)="showTracks(i)">
+            <p>
+                <a>
+                    {{album.name_album}}
+                    <span *ngIf="mostraCanzoni[i]"><i class="fas fa-caret-up"></i></span>
+                    <span *ngIf="!mostraCanzoni[i]"><i class="fas fa-caret-down"></i></span>
+                </a>
+            </p>
             <ul *ngIf="mostraCanzoni[i]">
                 <li *ngFor="let song of album.track_list">
                     {{song.name_track}}

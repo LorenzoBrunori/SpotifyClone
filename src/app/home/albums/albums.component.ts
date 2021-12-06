@@ -24,7 +24,7 @@ export class AlbumsComponent implements OnInit {
     });
     
     this.getArtista(+this.id);
-
+    //Vengono creati tanti valori booleani quanti sono gli album dell'artista
     this.artista.album.forEach(album => {
       this.mostraCanzoni.push(false);
     });
@@ -44,7 +44,7 @@ export class AlbumsComponent implements OnInit {
     };
   }
 
-  changeCaret(i: number){
+  showTracks(i: number){
     this.mostraCanzoni[i] = !this.mostraCanzoni[i];
     console.log(this.mostraCanzoni);
   }
