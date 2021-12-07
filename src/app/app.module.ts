@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SearchFilterPipe } from './search/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { InsertComponent } from './insert/insert.component';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { InsertComponent } from './insert/insert.component';
     SearchComponent,
     SearchFilterPipe,
     InsertComponent,
+    LoadingSpinnerComponent,
   ],
   imports: [
     BrowserModule,
