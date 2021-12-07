@@ -1,4 +1,4 @@
-import SearchJson from 'src/app/mock/search.json';
+import SearchJson from 'src/assets/mock/search.json';
 
 import { Component, OnInit } from '@angular/core';
 import { Artista } from '../shared/artista.interface';
