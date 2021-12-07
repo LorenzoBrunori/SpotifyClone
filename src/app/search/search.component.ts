@@ -15,7 +15,6 @@ export class SearchComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-        this.artisti = SearchJson;
+        this.artisti = SearchJson.searchJson;
   }
-    
 }

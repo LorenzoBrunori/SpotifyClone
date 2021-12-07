@@ -9,7 +9,7 @@ import { Artista } from 'src/app/shared/artista.interface';
   styleUrls: ['./albums.component.css']
 })
 export class AlbumsComponent implements OnInit {
-  artisti = SearchJson;
+  artisti = SearchJson.searchJson;
   artista: Artista;
   id: string;
   sub;

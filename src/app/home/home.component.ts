@@ -11,7 +11,7 @@ import SearchJson from 'src/assets/mock/search.json';
 
 export class HomeComponent implements OnInit {
 
-  artisti = SearchJson;
+  artisti = SearchJson.searchJson;
 
   constructor() {}
 
