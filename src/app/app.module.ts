@@ -10,6 +10,7 @@ import { SearchFilterPipe } from './search/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { InsertComponent } from './insert/insert.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

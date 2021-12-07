@@ -1,204 +1,218 @@
-{"searchJson": [
-  {
-    "id": 0,
-    "genre": "Rock",
-    "name": "AC/DC",
-    "imagePath": "https://i.scdn.co/image/ab67706f00000003eb6ecd02b6e08dfdefcdcc21",
-    "bio": "Are an Australian rock band formed in Sydney in 1973 by Scottish-born brothers Malcolm and Angus Young.Their music has been variously described as hard rock, blues rock, and heavy metal, but the band themselves call it simply 'rock and roll'",
-    "is_band": true,
-    "album": [
-      {
-        "name_album": "Black Ice",
-        "year": "2008",
-        "awards": "2x Platinum",
-        "track_list": [
-          {
-            "name_track": "Rock 'N Roll Train",
-            "time": "4:21"
-          },
-          {
-            "name_track": "Skies on Fire",
-            "time": "3:34"
-          },
-          {
-            "name_track": "Big Jack",
-            "time": "3:57"
-          },
-          {
-            "name_track": "Anything Goes",
-            "time": "3:22"
-          },
-          {
-            "name_track": "War Machine",
-            "time": "3:09"
-          },
-          {
-            "name_track": "Smash 'n' Grab",
-            "time": "4:06"
-          },
-          {
-            "name_track": "Spoilin' for a Fight",
-            "time": "3:17"
-          },
-          {
-            "name_track": "Wheels",
-            "time": "3:28"
-          },
-          {
-            "name_track": "Decibel",
-            "time": "3:34"
-          }
-        ]
-      },
-      {
-        "name_album": "Back in Black",
-        "year": "1980",
-        "awards": "25x Platinum",
-        "track_list": [
-          {
-            "name_track": "Hells Bells",
-            "time": "5:13"
-          },
-          {
-            "name_track": "Shoot to Thrill",
-            "time": "5:18"
-          },
-          {
-            "name_track": "What Do You Do for Money Honey",
-            "time": "3:36"
-          },
-          {
-            "name_track": "Given the Dog a Bone",
-            "time": "3:32"
-          },
-          {
-            "name_track": "Let Me Put My Love Into You",
-            "time": "4:15"
-          },
-          {
-            "name_track": "Back in Black",
-            "time": "4:16"
-          },
-          {
-            "name_track": "You Shook Me All Night Long",
-            "time": "3:30"
-          },
-          {
-            "name_track": "Rock and Roll Ain't Noise Pollution ",
-            "time": "4:15"
-          },
-          {
-            "name_track": "Have a Drink on Me",
-            "time": "3:59"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "genre": "Rap",
-    "name": "Eminem",
-    "imagePath": "https://i.scdn.co/image/ab67706f000000027a181d9fed936372672c40ca",
-    "bio" : "Is an American rapper, songwriter, and record producer. Eminem is among the best-selling music artists of all time, with estimated worldwide sales of over 220 million records. He is credited with popularizing hip hop in Middle America and is critically acclaimed as one of the greatest rappers of all time.",
-    "is_band": false,
-    "album": [
-      {
-        "name_album": "The Marshall Mathers LP",
-        "year": "2000",
-        "awards": "Diamond",
-        "track_list": [
-          {
-            "name_track": "Kill You",
-            "time": "4:24"
-          },
-          {
-            "name_track": "Stan",
-            "time": "6:44"
-          },
-          {
-            "name_track": "Who Knew",
-            "time": "3:47"
-          },
-          {
-            "name_track": "The Way I Am",
-            "time": "4:49"
-          },
-          {
-            "name_track": "The Real Slim Shady",
-            "time": "4:44"
-          },
-          {
-            "name_track": "Kim",
-            "time": "6:17"
-          },
-          {
-            "name_track": "Drug Ballad",
-            "time": "5:01"
-          },
-          {
-            "name_track": "Criminal",
-            "time": "5:14"
-          },
-          {
-            "name_track": "The Kids",
-            "time": "5:06"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "genre": "Pop rock",
-    "name": "Rino Gaetano",
-    "imagePath": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO3ssVhF-default.jpg",
-    "bio": "Was an Italian musician and singer-songwriter. He is famous for his satirical songs and oblique yet incisive political commentary. He is remembered for his rough voice, for the heavily ironic lyrics of his songs and his social protests. He died in a car accident at age 30. He was a popular and influential figure, widely re-evaluated by the following teen generations.",
-    "is_band": false,
-    "album": [
-      {
-        "name_album": "Aida",
-        "year": "1977",
-        "awards": null,
-        "track_list": [
-          {
-            "name_track": "Aida",
-            "time": "4:22"
-          },
-          {
-            "name_track": "Fontana chiara",
-            "time": "2:26"
-          },
-          {
-            "name_track": "Spendi spandi effendi",
-            "time": "3:59"
-          },
-          {
-            "name_track": "Sei ottavi",
-            "time": "3:17"
-          },
-          {
-            "name_track": "Escludi il cane",
-            "time": "4:17"
-          },
-          {
-            "name_track": "La festa di Maria",
-            "time": "2:46"
-          },
-          {
-            "name_track": "Rare tracce",
-            "time": "2:50"
-          },
-          {
-            "name_track": "Standard",
-            "time": "1:50"
-          },
-          {
-            "name_track": "OK papà",
-            "time": "3:43"
-          }
-        ]
-      }
-    ]
-  }
-]}
+{
+  "searchJson": [
+    {
+      "id": 0,
+      "genre": "Rock",
+      "name": "AC/DC",
+      "imagePath": "https://i.scdn.co/image/ab67706f00000003eb6ecd02b6e08dfdefcdcc21",
+      "bio": "Are an Australian rock band formed in Sydney in 1973 by Scottish-born brothers Malcolm and Angus Young.Their music has been variously described as hard rock, blues rock, and heavy metal, but the band themselves call it simply 'rock and roll'",
+      "is_band": true,
+      "album": [
+        {
+          "name_album": "Black Ice",
+          "year": "2008",
+          "awards": "2x Platinum",
+          "track_list": [
+            {
+              "name_track": "Rock 'N Roll Train",
+              "time": "4:21"
+            },
+            {
+              "name_track": "Skies on Fire",
+              "time": "3:34"
+            },
+            {
+              "name_track": "Big Jack",
+              "time": "3:57"
+            },
+            {
+              "name_track": "Anything Goes",
+              "time": "3:22"
+            },
+            {
+              "name_track": "War Machine",
+              "time": "3:09"
+            },
+            {
+              "name_track": "Smash 'n' Grab",
+              "time": "4:06"
+            },
+            {
+              "name_track": "Spoilin' for a Fight",
+              "time": "3:17"
+            },
+            {
+              "name_track": "Wheels",
+              "time": "3:28"
+            },
+            {
+              "name_track": "Decibel",
+              "time": "3:34"
+            }
+          ]
+        },
+        {
+          "name_album": "Back in Black",
+          "year": "1980",
+          "awards": "25x Platinum",
+          "track_list": [
+            {
+              "name_track": "Hells Bells",
+              "time": "5:13"
+            },
+            {
+              "name_track": "Shoot to Thrill",
+              "time": "5:18"
+            },
+            {
+              "name_track": "What Do You Do for Money Honey",
+              "time": "3:36"
+            },
+            {
+              "name_track": "Given the Dog a Bone",
+              "time": "3:32"
+            },
+            {
+              "name_track": "Let Me Put My Love Into You",
+              "time": "4:15"
+            },
+            {
+              "name_track": "Back in Black",
+              "time": "4:16"
+            },
+            {
+              "name_track": "You Shook Me All Night Long",
+              "time": "3:30"
+            },
+            {
+              "name_track": "Rock and Roll Ain't Noise Pollution ",
+              "time": "4:15"
+            },
+            {
+              "name_track": "Have a Drink on Me",
+              "time": "3:59"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "genre": "Rap",
+      "name": "Eminem",
+      "imagePath": "https://i.scdn.co/image/ab67706f000000027a181d9fed936372672c40ca",
+      "bio": "Is an American rapper, songwriter, and record producer. Eminem is among the best-selling music artists of all time, with estimated worldwide sales of over 220 million records. He is credited with popularizing hip hop in Middle America and is critically acclaimed as one of the greatest rappers of all time.",
+      "is_band": false,
+      "album": [
+        {
+          "name_album": "The Marshall Mathers LP",
+          "year": "2000",
+          "awards": "Diamond",
+          "track_list": [
+            {
+              "name_track": "Kill You",
+              "time": "4:24"
+            },
+            {
+              "name_track": "Stan",
+              "time": "6:44"
+            },
+            {
+              "name_track": "Who Knew",
+              "time": "3:47"
+            },
+            {
+              "name_track": "The Way I Am",
+              "time": "4:49"
+            },
+            {
+              "name_track": "The Real Slim Shady",
+              "time": "4:44"
+            },
+            {
+              "name_track": "Kim",
+              "time": "6:17"
+            },
+            {
+              "name_track": "Drug Ballad",
+              "time": "5:01"
+            },
+            {
+              "name_track": "Criminal",
+              "time": "5:14"
+            },
+            {
+              "name_track": "The Kids",
+              "time": "5:06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "genre": "Pop rock",
+      "name": "Rino Gaetano",
+      "imagePath": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO3ssVhF-default.jpg",
+      "bio": "Was an Italian musician and singer-songwriter. He is famous for his satirical songs and oblique yet incisive political commentary. He is remembered for his rough voice, for the heavily ironic lyrics of his songs and his social protests. He died in a car accident at age 30. He was a popular and influential figure, widely re-evaluated by the following teen generations.",
+      "is_band": false,
+      "album": [
+        {
+          "name_album": "Aida",
+          "year": "1977",
+          "awards": null,
+          "track_list": [
+            {
+              "name_track": "Aida",
+              "time": "4:22"
+            },
+            {
+              "name_track": "Fontana chiara",
+              "time": "2:26"
+            },
+            {
+              "name_track": "Spendi spandi effendi",
+              "time": "3:59"
+            },
+            {
+              "name_track": "Sei ottavi",
+              "time": "3:17"
+            },
+            {
+              "name_track": "Escludi il cane",
+              "time": "4:17"
+            },
+            {
+              "name_track": "La festa di Maria",
+              "time": "2:46"
+            },
+            {
+              "name_track": "Rare tracce",
+              "time": "2:50"
+            },
+            {
+              "name_track": "Standard",
+              "time": "1:50"
+            },
+            {
+              "name_track": "OK papà",
+              "time": "3:43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pippo",
+      "album": "pippo",
+      "song": "pippo",
+      "id": 10
+    },
+    {
+      "name": "pippo franco",
+      "album": "pippo franco best hits",
+      "song": "daghe",
+      "id": 11
+    }
+  ]
+}
