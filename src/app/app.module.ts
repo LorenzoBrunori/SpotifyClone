@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchFilterPipe } from './search/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { InsertComponent } from './insert/insert.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     AlbumsComponent,
     SearchComponent,
     SearchFilterPipe,
+    InsertComponent,
   ],
   imports: [
     BrowserModule,

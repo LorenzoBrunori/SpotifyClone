@@ -2,18 +2,23 @@
   <div class="col-2 mySideBar">
     <div class="container flex marginTB">
       <div class="logo">
-        <a class="basic-link logo-testo" routerLink="/">
+        <a class="basic-link logo-testo" routerLink="/" routerLinkActive="active">
           <i class="fab fa-spotify fa-2x" aria-hidden="true"></i>Spotify
         </a>
       </div>
       <div class="search">
-        <a class="common-link logo-testo2" routerLink="/search">
+        <a class="common-link logo-testo2" routerLink="/search" routerLinkActive="active">
           <i class="fas fa-search" aria-hidden="true"></i> Search
         </a>
       </div>
       <div class="search">
-        <a class="common-link logo-testo2" routerLink="/">
+        <a class="common-link logo-testo2" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
           <i class="fas fa-headphones-alt" aria-hidden="true"></i> Album
+        </a>
+      </div>
+      <div class="search">
+        <a class="common-link logo-testo2" routerLink="/insert" routerLinkActive="active">
+          <i class="fab fa-accessible-icon"></i> Aggiungi
         </a>
       </div>
     </div>
