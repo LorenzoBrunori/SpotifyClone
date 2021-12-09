@@ -8,53 +8,47 @@
             </div>
 
 
-            <form  (ngSubmit)="onSubmit(formObj)" #formObj="ngForm" *ngIf="!isLoading">
+            <form (ngSubmit)="onSubmit(formObj)" #formObj="ngForm" *ngIf="!isLoading">
 
                 <div class="form-group">
-                    <label for="artista">Inserisci Artista</label>
-                    <input 
-                    type="text" 
-                    id="artista" 
-                    name="artista"
-                    class="form-control" 
-                    ngModel
-                    >
+                    <label for="genre">Genere</label>
+                    <select name="genre" id="genre" class="form-select" area-label="Default select example" ngModel
+                        required>
+                        <option value="rock">rock</option>
+                        <option value="metal">metal</option>
+                        <option value="rap">rap</option>
+                        <option value="neo melodico">neo melodico</option>
+                        <option value="trap">trap</option>
+                        <option value="r&b">r&b</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="album">Inserisci Album</label>
-                    <input 
-                    type="text" 
-                    id="album" 
-                    name="album"
-                    class="form-control"
-                    ngModel
-                    >
+                    <label for="name">Nome Artista / Band</label>
+                    <input type="text" id="name" name="name" class="form-control" ngModel required>
                 </div>
                 <div class="form-group">
-                    <label for="song">Inserisci canzone</label>
-                    <input 
-                    type="text" 
-                    id="song" 
-                    name="song"
-                    class="form-control"
-                    ngModel
-                    >
+                    <label for="imagePath">Immagine</label>
+                    <input type="text" id="imagePath" name="imagePath" class="form-control" ngModel required>
                 </div>
                 <div class="form-group">
-                    <label for="song">Inserisci canzone</label>
-                    <input 
-                    type="text" 
-                    id="song" 
-                    name="song"
-                    class="form-control"
-                    ngModel
-                    >
+                    <label for="bio">Bio</label>
+                    <textarea type="text" id="bio" name="bio" class="form-control" ngModel required>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">E' una band? </label><br>
+                    <input type="radio" id="is_band" name="is_band" class="form-check-input" value="true" ngModel
+                        required>
+                    <label for="is_band">Si</label>
+                    |
+                    <input type="radio" id="is_band_no" name="is_band" value="false" class="form-check-input" ngModel
+                        required>
+                    <label for="is_band_no">No</label>
                 </div>
                 <div>
-                    <button class="btn btn-primary">Aggiungi</button>
+                    <button [disabled]="!formObj.valid" class="btn btn-primary">Next</button>
                 </div>
             </form>
         </div>
     </div>
-
 </div>

@@ -1,0 +1,26 @@
+<div class="form-group" style="display: flex;">
+    <div class="col-8">
+        <label for="track">Nome traccia</label>
+        <input type="text" id="track" name="track" class="form-control" [(ngModel)]="nomeTraccia">
+    </div>
+    ||
+    <div class="col-3">
+        <label for="track_time">Durata</label>
+        <input type="text" id="track_time" name="track_time" class="form-control" [(ngModel)]="durataTraccia">
+    </div>
+    <div class="col-2" style="margin: 24px 0 0 5px ;">
+        <button class="btn btn-success" type="button" (click)="addSong()">+</button>
+    </div>
+</div>
+<div class="form-group" *ngIf="trackList.length > 0">
+    <h4>Canzoni inseriti nell'album</h4>
+    <ul>
+        <li *ngFor="let track of trackList">{{track.name_track}}-{{track.time}}</li>
+    </ul>
+</div>
+<div class="form-group" *ngIf="trackList.length < 1">
+    <h4>Nessuna canzone inserita nell'album</h4>
+</div>
+<div>
+    <button [disabled]="trackList.length < 1" class="btn btn-primary" (click)="onSubmit()">submit</button>
+</div>

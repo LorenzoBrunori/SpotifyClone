@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { InsertComponent } from './insert/insert.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InsertAlbumComponent } from './insert/insert-album/insert-album.component';
+import { InsertTracksComponent } from './insert/insert-tracks/insert-tracks.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     SearchFilterPipe,
     InsertComponent,
     LoadingSpinnerComponent,
+    InsertAlbumComponent,
+    InsertTracksComponent,
   ],
   imports: [
     BrowserModule,

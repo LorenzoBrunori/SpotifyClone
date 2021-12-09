@@ -203,16 +203,33 @@
       ]
     },
     {
-      "name": "pippo",
-      "album": "pippo",
-      "song": "pippo",
-      "id": 10
-    },
-    {
-      "name": "pippo franco",
-      "album": "pippo franco best hits",
-      "song": "daghe",
-      "id": 11
+      "genre": "rock",
+      "name": "Pippo Caruso",
+      "imagePath": "https://www.romagnauno.it/wp-content/uploads/2018/05/Schermata-2018-05-28-alle-21.26.11.png",
+      "bio": "Giuseppe Caruso, detto Pippo (Belpasso, 22 dicembre 1935 – Fara in Sabina, 28 maggio 2018), è stato un direttore d'orchestra, arrangiatore e compositore italiano.",
+      "is_band": false,
+      "album": [
+        {
+          "name_album": "Porca società",
+          "year": "1978",
+          "awards": "tanti",
+          "track_list": [
+            {
+              "name_track": "pippo classics",
+              "time": "1:20"
+            },
+            {
+              "name_track": "pippo ftw",
+              "time": "4:20"
+            },
+            {
+              "name_track": "la quarta sinfonia",
+              "time": "6:00"
+            }
+          ]
+        }
+      ],
+      "id": 3
     }
   ]
 }
