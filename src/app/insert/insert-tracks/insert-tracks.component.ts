@@ -30,23 +30,29 @@ export class InsertTracksComponent implements OnInit {
     this.albumName = this.route.snapshot.queryParams['albumName'];
     this.dataHandling.getArtista(this.id).subscribe(art => {
       this.artista = art;
+      for (let alb of this.artista.album) {
+        if (alb.name_album === this.albumName) {
+          this.trackList = alb.track_list;
+          break;
+        }
+      }
     });
   }
 
   addSong() {
-    this.trackList.push({ name_track: this.nomeTraccia, time: this.durataTraccia });
-    this.nomeTraccia = '';
-    this.durataTraccia = '';
+    for (let alb of this.artista.album) {
+      if (alb.name_album === this.albumName) {
+        alb.track_list.push({ name_track: this.nomeTraccia, time: this.durataTraccia });
+        this.trackList= alb.track_list;
+        this.nomeTraccia = '';
+        this.durataTraccia = '';
+      }
+    }
   }
 
   onSubmit(){
-    for (let alb of this.artista.album) {
-      if (alb.name_album === this.albumName) {
-        alb.track_list = this.trackList;
-      }
-    }
     this.dataHandling.putArtista(this.artista, this.id).subscribe(data => {
-      this.router.navigate(['/']);
+      this.router.navigate(['/albums/'+this.id]);
       console.log(data);
     })
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import SearchJson from 'src/assets/mock/search.json';
 import { Artista } from 'src/app/shared/artista.interface';
 
@@ -14,7 +14,9 @@ export class AlbumsComponent implements OnInit {
   id: string;
   sub;
   mostraCanzoni: boolean[] = [];
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router) {
 
   }
 
@@ -47,6 +49,22 @@ export class AlbumsComponent implements OnInit {
     this.mostraCanzoni[i] = !this.mostraCanzoni[i];
   }
   
+  goToSongForm(albumName :string, id: number){
+    const artId = id + '';
+    this.router.navigate(
+      ['insert/album/tracks'], {
+      queryParams: { albumName: albumName, id: artId }
+    });
+  }
+
+  goToAlbumForm(id: number){
+    const artId = id + '';
+    this.router.navigate(
+      ['insert/album'], {
+      queryParams: { id: artId }
+    });
+  }
+
 }
 
 
