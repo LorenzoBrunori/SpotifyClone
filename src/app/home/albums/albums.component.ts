@@ -1,19 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewChecked, Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import SearchJson from 'src/assets/mock/search.json';
 import { Artista } from 'src/app/shared/artista.interface';
+import {NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-albums',
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css']
 })
-export class AlbumsComponent implements OnInit {
+export class AlbumsComponent implements OnInit, AfterViewChecked {
   artisti = SearchJson.searchJson;
   artista: Artista;
   id: string;
   sub;
   mostraCanzoni: boolean[] = [];
+  updating: boolean = false;
+  @ViewChild('formObj', {static: false}) slForm: NgForm;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router) {
@@ -30,6 +34,12 @@ export class AlbumsComponent implements OnInit {
     this.artista.album.forEach(album => {
       this.mostraCanzoni.push(false);
     });
+
+  }
+
+  ngAfterViewChecked(){
+    console.log(this.slForm);
+    
   }
 
   getArtista(id: number) {
@@ -65,6 +75,14 @@ export class AlbumsComponent implements OnInit {
     });
   }
 
+
+  goToArtist(){
+    this.updating = true;
+  }
+
+  onUpdate(form: NgForm){
+    
+  }
 }
 
 

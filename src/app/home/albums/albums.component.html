@@ -1,12 +1,23 @@
-
 <div class="container">
     <!-- <div *ngIf="artista && artista.album.length > 0" > -->
-        <div class="row">
-            <img class="rounded float-left myImage" [src]="artista.imagePath" alt="">
-            <h3>{{ artista.name }}</h3>
-            <p>{{artista.bio}}</p>
+    <div class="row">
+
+        <button class="btn btn-info btn-sm" (click)="goToArtist()">Modifica</button>
+
+        <div class="" *ngIf="!updating">
+
+            <div class="col-xs-5">
+                <img class="rounded float-left myImage" [src]="artista.imagePath" alt="">
+                <h3>{{ artista.name }} | <button class="btn btn-info btn-sm"
+                        (click)="goToAlbumForm(artista.id)">Aggiungi album</button></h3>
+                <p>{{artista.bio}} </p>
+            </div>
+
         </div>
-        <button class="btn btn-info btn-sm" (click)="goToAlbumForm(artista.id)">Aggiungi album</button>
+
+    </div>
+
+    <div class="" *ngIf="!updating">
 
         <div *ngFor="let album of artista.album; let i = index" (click)="showTracks(i)">
             <p>
@@ -14,14 +25,59 @@
                     {{album.name_album}}
                     <span *ngIf="mostraCanzoni[i]"><i class="fas fa-caret-up"></i></span>
                     <span *ngIf="!mostraCanzoni[i]"><i class="fas fa-caret-down"></i></span>
-                </a>
-                <button class="btn btn-info btn-sm" (click)="goToSongForm(album.name_album, artista.id)">Aggingi canzone</button>
+                    | </a>
+                <button class="btn btn-info btn-sm" (click)="goToSongForm(album.name_album, artista.id)">Aggingi
+                    canzone</button>
             </p>
             <ul *ngIf="mostraCanzoni[i]">
                 <li *ngFor="let song of album.track_list">
                     {{song.name_track}}
-                </li> 
+                </li>
             </ul>
         </div>
-    
+
+    </div>
+
+
+    <div class="row" *ngIf="updating">
+        <form (ngSubmit)="onUpdate(formObj)" #formObj="ngForm">
+            <div class="form-group">
+                <label for="genre">Genere</label>
+                <select name="genre" id="genre" class="form-select" area-label="Default select example" ngModel
+                    required>
+                    <option value="rock">rock</option>
+                    <option value="metal">metal</option>
+                    <option value="rap">rap</option>
+                    <option value="neo melodico">neo melodico</option>
+                    <option value="trap">trap</option>
+                    <option value="r&b">r&b</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Nome Artista / Band</label>
+                <input #prova type="text" id="name" name="name" class="form-control" ngModel required>
+            </div>
+            <div class="form-group">
+                <label for="imagePath">Immagine</label>
+                <input type="text" id="imagePath" name="imagePath" class="form-control" ngModel required>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea type="text" id="bio" name="bio" class="form-control" ngModel required>
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label for="">E' una band? </label><br>
+                <input type="radio" id="is_band" name="is_band" class="form-check-input" value="true" ngModel
+                    required>
+                <label for="is_band">Si</label>
+                |
+                <input type="radio" id="is_band_no" name="is_band" value="false" class="form-check-input" ngModel
+                    required>
+                <label for="is_band_no">No</label>
+            </div>
+        </form>
+
+        <button class="btn btn-success" (click)="updating = !updating">Update</button>
+    </div>
 </div>

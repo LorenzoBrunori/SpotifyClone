@@ -16,7 +16,9 @@ const appRoutes: Routes = [
     { path: 'insert', component: InsertComponent},
     { path: 'insert/album', component: InsertAlbumComponent},
     { path: 'insert/album/tracks', component: InsertTracksComponent},
+
     { path: '**', component: HomeComponent}
+
 ];
 
 @NgModule({

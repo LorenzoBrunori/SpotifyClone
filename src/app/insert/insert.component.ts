@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
-import { NgForm } from '@angular/forms';
+import { FormGroup, NgForm } from '@angular/forms';
 import { Album, Artista, TrackList } from '../shared/artista.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataStorageService } from '../shared/data-storage.service';
@@ -15,6 +15,8 @@ export class InsertComponent implements OnInit {
   @ViewChild('formObj', { static: false }) slForm: NgForm;
   isLoading: boolean = false;
 
+
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -22,11 +24,12 @@ export class InsertComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    
   }
 
   onSubmit(form: NgForm) {
     const artista = this.createArtista(form.value);
-    this.dataHandling.postArtista(artista).subscribe(data => {
+        this.dataHandling.postArtista(artista).subscribe(data => {
         this.router.navigate(
           ['album'],{relativeTo: this.route, 
           queryParams: {id: data.id}
@@ -40,10 +43,12 @@ export class InsertComponent implements OnInit {
       isBand = true;
     const body: Artista =
       new newArtist(value.genre, value.name, value.imagePath, value.bio, isBand);
-
     return body;
   }
+
 }
+
+
 
 
 //================================================================
