@@ -2,9 +2,9 @@
     <!-- <div *ngIf="artista && artista.album.length > 0" > -->
     <div class="row">
 
-        <button class="btn btn-info btn-sm" (click)="goToArtist()">Modifica</button>
+        <button class="btn btn-info btn-sm" (click)="goToArtist(artista.id)">Modifica</button>
 
-        <div class="" *ngIf="!updating">
+        <div class="" >
 
             <div class="col-xs-5">
                 <img class="rounded float-left myImage" [src]="artista.imagePath" alt="">
@@ -17,7 +17,7 @@
 
     </div>
 
-    <div class="" *ngIf="!updating">
+    <div class="" >
 
         <div *ngFor="let album of artista.album; let i = index" (click)="showTracks(i)">
             <p>
@@ -35,11 +35,10 @@
                 </li>
             </ul>
         </div>
-
     </div>
 
 
-    <div class="row" *ngIf="updating">
+    <!-- <div class="row" *ngIf="updating">
         <form (ngSubmit)="onUpdate(formObj)" #formObj="ngForm">
             <div class="form-group">
                 <label for="genre">Genere</label>
@@ -79,5 +78,5 @@
         </form>
 
         <button class="btn btn-success" (click)="updating = !updating">Update</button>
-    </div>
+    </div> -->
 </div>

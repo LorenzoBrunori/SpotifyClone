@@ -9,14 +9,13 @@ import {NgForm } from '@angular/forms';
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css']
 })
-export class AlbumsComponent implements OnInit, AfterViewChecked {
+export class AlbumsComponent implements OnInit {
   artisti = SearchJson.searchJson;
   artista: Artista;
   id: string;
   sub;
   mostraCanzoni: boolean[] = [];
   updating: boolean = false;
-  @ViewChild('formObj', {static: false}) slForm: NgForm;
 
   constructor(
     private route: ActivatedRoute,
@@ -37,10 +36,6 @@ export class AlbumsComponent implements OnInit, AfterViewChecked {
 
   }
 
-  ngAfterViewChecked(){
-    console.log(this.slForm);
-    
-  }
 
   getArtista(id: number) {
     const art = this.artisti[this.id]; //solo per non scrivere mille volte this.artisti[id]
@@ -76,13 +71,13 @@ export class AlbumsComponent implements OnInit, AfterViewChecked {
   }
 
 
-  goToArtist(){
-    this.updating = true;
+  goToArtist(id: number){
+    const artId = id + '';
+    this.router.navigate(['edit'], {
+      queryParams: { id: artId }
+    })
   }
 
-  onUpdate(form: NgForm){
-    
-  }
 }
 
 

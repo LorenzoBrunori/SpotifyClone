@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onSubmit()" >
+            <div class="form-group">
+                <label for="">Genere</label>
+                <input type="text" [(ngModel)] = "artista.genre" name="genre">
+                <label for="">Nome</label>
+                <input type="text" [(ngModel)] = "artista.name" name="name">
+                <label for="">Link Immagine</label>
+                <input type="text" [(ngModel)] = "artista.imagePath" name="imagePath">
+            </div>
+            <div class="form-group">
+                <label for="">Bio</label>
+                <textarea type="text"  class="form-control" [(ngModel)] = "artista.bio" name="bio"></textarea>
+            </div>
+            <div class="form-group" [ngSwitch]="isBand">
+                <label for="">E' una band? </label> | 
+                <span *ngSwitchCase="'true'">
+                    <label for="is_band">Si</label>
+                    <input type="radio" value='true' name="is_band" [(ngModel)] = "isBand"  checked> |
+                    <label for="is_band_no">No</label>
+                    <input type="radio" value='false' name="is_band" [(ngModel)] = "isBand">
+                </span>
+                <span *ngSwitchCase="'false'">
+                    <label for="is_band">Si</label>
+                    <input type="radio" value='true' name="is_band" [(ngModel)] = "isBand"> |
+                    <label for="is_band_no">No</label>
+                    <input type="radio" value='false' name="is_band" [(ngModel)] = "isBand" checked>
+                </span>
+            </div>
+            <div>
+                <h6>Album</h6>
+                <div *ngFor="let album of artista.album; let i = index"  class="form-group" >
+                    <div >
+                        <a>
+                            <input type="text" [(ngModel)] = "album.name_album" [ngModelOptions]="{standalone: true}">
+                            <input type="text"  [(ngModel)] = "album.year" [ngModelOptions]="{standalone: true}">
+                            <input type="text" [(ngModel)] = "album.awards" [ngModelOptions]="{standalone: true}">
+                        </a>
+                        <button class="btn btn-danger  btn-sm" type="button" (click)="eliminaAlbum(i)">x</button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li *ngFor="let song of album.track_list; let j = index" >
+                                <input type="text" [(ngModel)] = "song.name_track" [ngModelOptions]="{standalone: true}" >
+                                <input type="text" [(ngModel)] = "song.time" [ngModelOptions]="{standalone: true}">
+                                <button class="btn btn-danger btn-sm" type="button" (click)="eliminaCanzone(i,j)">x</button>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary">Edit</button>
+        </form>
+    </div>
+</div>

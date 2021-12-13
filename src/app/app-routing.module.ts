@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { EditComponent } from "./edit/edit.component";
 import { AlbumsComponent } from "./Home/albums/albums.component";
 
 
@@ -16,6 +17,8 @@ const appRoutes: Routes = [
     { path: 'insert', component: InsertComponent},
     { path: 'insert/album', component: InsertAlbumComponent},
     { path: 'insert/album/tracks', component: InsertTracksComponent},
+    { path: 'edit', component: EditComponent},
+
 
     { path: '**', component: HomeComponent}
 

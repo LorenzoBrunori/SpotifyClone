@@ -48,10 +48,6 @@
             {
               "name_track": "Decibel",
               "time": "3:34"
-            },
-            {
-              "name_track": "canzone di pippo",
-              "time": "34.34"
             }
           ]
         },
@@ -216,74 +212,20 @@
         {
           "name_album": "Porca società",
           "year": "1978",
-          "awards": "tanti",
+          "awards": "platinum",
           "track_list": [
             {
-              "name_track": "pippo classics",
-              "time": "1:20"
+              "name_track": "pippo ",
+              "time": "1:00"
             },
             {
-              "name_track": "pippo ftw",
-              "time": "4:20"
-            },
-            {
-              "name_track": "la quarta sinfonia",
-              "time": "6:00"
+              "name_track": "caruso",
+              "time": "3:00"
             }
           ]
         }
       ],
       "id": 3
-    },
-    {
-      "genre": "rock",
-      "name": "wse",
-      "imagePath": "sasa",
-      "bio": "asas",
-      "is_band": false,
-      "album": [
-        {
-          "name_album": "asas",
-          "year": "asasa",
-          "awards": "saasa",
-          "track_list": [
-            {
-              "name_track": "asasas",
-              "time": "asasas"
-            }
-          ]
-        }
-      ],
-      "id": 4
-    },
-    {
-      "genre": "metal",
-      "name": "Ristorante Team 5",
-      "imagePath": "qweqwe",
-      "bio": "eqwewqe",
-      "is_band": false,
-      "album": [
-        {
-          "name_album": "1",
-          "year": "212",
-          "awards": "21343",
-          "track_list": [
-            {
-              "name_track": "1212134",
-              "time": "asasas"
-            },
-            {
-              "name_track": "1212134",
-              "time": "3434"
-            },
-            {
-              "name_track": "canzone di pippo",
-              "time": "asasas"
-            }
-          ]
-        }
-      ],
-      "id": 5
     }
   ]
 }

@@ -1,7 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { NgForm } from "@angular/forms";
-import { Observable } from "rxjs";
 import { Album, Artista, TrackList } from "./artista.interface";
 
 @Injectable({providedIn: 'root'})
